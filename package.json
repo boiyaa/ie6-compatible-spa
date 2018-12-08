@@ -1,0 +1,20 @@
+{
+  "name": "ie6-compatible-spa-example",
+  "version": "1.0.0",
+  "description": "IE6-compatible SPA example",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "check": "eslint api/main.js web/src"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.15.3"
+  }
+}

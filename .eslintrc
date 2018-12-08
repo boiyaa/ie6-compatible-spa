@@ -1,0 +1,16 @@
+{
+  "env": { "browser": true, "node": true },
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react"],
+  "rules": {
+    "no-console": 0,
+    "no-unused-vars": [2, { "varsIgnorePattern": "^h$" }],
+    "react/jsx-uses-vars": 2,
+    "import/order": 2
+  }
+}
