@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -25,7 +24,10 @@ class CustomJSPackager extends JSPackager {
               .replace(".createElement(", ".createElement_(")
               .replace("setAttribute", "setAttribute_")
               .replace("removeAttribute", "removeAttribute_")
-              .replace("insertBefore(newElement, element)", "insertBefore(newElement, element || null)");
+              .replace(
+                "insertBefore(newElement, element)",
+                "insertBefore(newElement, element || null)"
+              );
 
         code = babel.transformSync(code, {
           inputSourceMap: false,
